@@ -20,5 +20,10 @@ class User < ActiveRecord::Base
                     :styles => {
                         :small => "120x120#",
                     }
+  attr_accessible :email, :password, :password_confirmation, :remember_me
+  acts_as_messageable
+  def name
+    email
+  end
 
 end

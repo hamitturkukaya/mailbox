@@ -58,6 +58,8 @@ gem "client_side_validations"
 gem "client_side_validations-simple_form"
 gem "turbolinks"
 gem "strong_parameters"
+gem 'mailboxer'
+
 group :assets do
   gem "bootstrap-sass"
   gem "compass-rails"
